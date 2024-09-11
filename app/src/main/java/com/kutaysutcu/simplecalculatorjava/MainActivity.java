@@ -25,39 +25,40 @@ public class MainActivity extends AppCompatActivity {
 
     public void calculations(String operation)
     {
-        double number1 = parseInt(number1Txt.getText().toString());
-        double number2 = parseInt(number2Txt.getText().toString());
-        double result;
-
-        switch(operation)
+        if(number1Txt.getText().toString().matches("") || number2Txt.getText().toString().matches(""))
         {
-            case "sum":
-            {
-                result = number1 + number2;
-                resultTxt.setText("Result: " + result);
-                break;
-            }
-            case "deduct":
-            {
-                result = number1 - number2;
-                resultTxt.setText("Result: " + result);
-                break;
-            }
-            case "multiply":
-            {
-                result = number1 * number2;
-                resultTxt.setText("Result: " + result);
-                break;
-            }
-            case "divide":
-            {
-                result = number1 / number2;
-                resultTxt.setText("Result: " + result);
-                break;
-            }
-            default:
-            {
-                break;
+            resultTxt.setText("Enter a number");
+        }
+        else
+        {
+            double number1 = parseInt(number1Txt.getText().toString());
+            double number2 = parseInt(number2Txt.getText().toString());
+            double result;
+
+            switch (operation) {
+                case "sum": {
+                    result = number1 + number2;
+                    resultTxt.setText("Result: " + result);
+                    break;
+                }
+                case "deduct": {
+                    result = number1 - number2;
+                    resultTxt.setText("Result: " + result);
+                    break;
+                }
+                case "multiply": {
+                    result = number1 * number2;
+                    resultTxt.setText("Result: " + result);
+                    break;
+                }
+                case "divide": {
+                    result = number1 / number2;
+                    resultTxt.setText("Result: " + result);
+                    break;
+                }
+                default: {
+                    break;
+                }
             }
         }
     }

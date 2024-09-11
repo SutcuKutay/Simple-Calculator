@@ -15,7 +15,7 @@
         android:layout_marginBottom="23dp"
         android:ems="10"
         android:hint="Enter number 1"
-        android:inputType="text"
+        android:inputType="number"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/number2Txt"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,7 +29,7 @@
         android:layout_marginBottom="76dp"
         android:ems="10"
         android:hint="Enter number 2"
-        android:inputType="text"
+        android:inputType="number"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintStart_toStartOf="@+id/number1Txt"
@@ -37,8 +37,8 @@
 
     <TextView
         android:id="@+id/resultTxt"
-        android:layout_width="238dp"
-        android:layout_height="0dp"
+        android:layout_width="388dp"
+        android:layout_height="195dp"
         android:layout_marginBottom="212dp"
         android:textAlignment="center"
         android:textSize="48sp"
@@ -49,8 +49,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="361dp"
-        android:layout_height="115dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="57dp"
         android:layout_marginEnd="57dp"
         android:layout_marginBottom="44dp"
@@ -64,8 +64,10 @@
 
         <Button
             android:id="@+id/toplamaBtn"
-            android:layout_width="72dp"
-            android:layout_height="61dp"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
             android:onClick="sum"
             android:text="+"
             android:textAlignment="center"
@@ -73,8 +75,11 @@
 
         <Button
             android:id="@+id/cikarmaBtn"
-            android:layout_width="72dp"
-            android:layout_height="61dp"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
             android:onClick="deduct"
             android:text="-"
             android:textAlignment="center"
@@ -82,8 +87,11 @@
 
         <Button
             android:id="@+id/carpmaBtn"
-            android:layout_width="72dp"
-            android:layout_height="61dp"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
             android:onClick="multiply"
             android:text="*"
             android:textAlignment="center"
@@ -91,8 +99,10 @@
 
         <Button
             android:id="@+id/bolmeBtn"
-            android:layout_width="72dp"
-            android:layout_height="61dp"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
             android:onClick="divide"
             android:text="/"
             android:textAlignment="center"
